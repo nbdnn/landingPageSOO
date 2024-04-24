@@ -26,6 +26,11 @@ body {
   display: flex;
   height: 72px;
   padding-left: 80px;
+  /* align-items: center; */
+}
+
+.logoImg {
+  margin-right: 20px;
 }
 
 .headerMenu {
