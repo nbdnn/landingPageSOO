@@ -1,0 +1,25 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+#nav_logo_img {
+    height: 48px;
+}
