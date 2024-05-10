@@ -1,5 +1,8 @@
 header {
     width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
     padding: 28px 8%;
 }
 
@@ -8,6 +11,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    /* padding-left: 2em;
+    padding-right: 2em; */
+    height: 88px;
+    /* grid-column-gap: 2em; */
 }
 
 #nav_logo {
@@ -17,9 +25,67 @@ header {
     color: #ffffff;
     font-family: "Kanit", sans-serif;
     font-style: italic;
+    text-decoration: none;
+}
+
+#nav_logo_text1 {
+    font-weight: 500;
+}
+
+#nav_logo_text2 {
     font-weight: 200;
 }
 
 #nav_logo_img {
-    height: 48px;
+    height: 65px;
+    margin-right: 5px;
+}
+
+#nav_links {
+    /* width: 60%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #cecece;
+    border-bottom: 3px solid #ffffff;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display:none;
+    font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
 }
